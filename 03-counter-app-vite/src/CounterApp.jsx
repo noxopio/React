@@ -13,18 +13,18 @@ export const CounterApp = ({ value }) => {
     setCounter((c) => c - 1)
   }
 
-const handleReset=()=>{
+  const handleReset = () => {
 
-  setCounter(value)
-}
+    setCounter(value)
+  }
 
   return (
     <>
       <h1>CounterApp</h1>
       <h2>{counter}</h2>
-      <button onClick={handleClick}>+</button>
-      <button onClick={handleDecrement}>-</button>
-      <button onClick={handleReset}>Reset</button>
+      <button onClick={handleClick}>+1</button>
+      <button onClick={handleDecrement}>-1</button>
+      <button aria-label='btn-reset'  onClick={handleReset}>Reset</button>
     </>
 
   )
