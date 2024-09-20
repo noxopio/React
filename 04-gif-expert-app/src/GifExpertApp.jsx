@@ -2,10 +2,12 @@ import { useState } from "react"
 import AddCategory from "./components/AddCategory";
 
 export const GifExpertApp = () => {
+
     const [categories, setCategories] = useState(['One Punch', 'Samurai X', 'Dragon Ball']);
 
-    const handleAdd = () => {
-        setCategories([ 'HunterXHunter',...categories])
+    const onAddCategory = (newCategory) => {
+        if (categories.includes(newCategory)) return;
+        setCategories([ newCategory,...categories])
     }
 
     return (
@@ -13,7 +15,8 @@ export const GifExpertApp = () => {
             <h1>GifExpertApp</h1>
            
            <AddCategory
-            setCategories={setCategories}
+            // setCategories={setCategories}
+            onNewCategory={onAddCategory}
            
            />
             <hr />
