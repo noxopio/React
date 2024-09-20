@@ -27,7 +27,7 @@ describe('Pruebas en <CounterApp>', () => {
   });
 
 
-test('Debe de decrementar con el boton -1', () => {
+  test('Debe de decrementar con el boton -1', () => {
     render(<CounterApp value={10} />)
     fireEvent.click(screen.getByText('-1'));
     expect(screen.getByText(9)).toBeTruthy();
@@ -38,8 +38,8 @@ test('Debe de decrementar con el boton -1', () => {
     render(<CounterApp value={105} />)
     fireEvent.click(screen.getByText('+1'));
     // fireEvent.click(screen.getByText('Reset'));
-fireEvent.click( screen.getByRole('button', { name: /reset/i }));
-screen.debug();
+    fireEvent.click(screen.getByRole('button', { name: /reset/i }));
+    screen.debug();
     expect(screen.getByText(105)).toBeTruthy();
 
   });

@@ -24,7 +24,7 @@ export const CounterApp = ({ value }) => {
       <h2>{counter}</h2>
       <button onClick={handleClick}>+1</button>
       <button onClick={handleDecrement}>-1</button>
-      <button aria-label='btn-reset'  onClick={handleReset}>Reset</button>
+      <button   onClick={handleReset}>Reset</button>
     </>
 
   )
