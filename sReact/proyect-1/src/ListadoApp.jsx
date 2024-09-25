@@ -11,21 +11,16 @@ const application = [
 ]
 
 export const ListadoApp = () => {
-
-
-
-
-
     return (
         <>
-            <h1>    Listado de aplicaciones</h1>`
+            <h1>Listado de aplicaciones</h1>
             <ul>
-                {application.map(({id,name}) => (
+                {application.map(({ id, name }) => (
                     <li key={id}>{id}.{name}</li>
+                   
                 ))
                 }
             </ul>
         </>
     )
 }
-
