@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './styles.css'
+import { ListasApp } from './ListasApp'
 import { ListadoApp } from './ListadoApp'
 // import  {ContadorApp } from './ContadorApp'
 
@@ -9,16 +10,13 @@ import { ListadoApp } from './ListadoApp'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+<ListasApp 
 
-<ListadoApp />
+nombre =''
+visto =''
+/>
+{/* <ListadoApp	/> */}
 
-
-
-
-    {/* <ContadorApp 
-    
-    value={0}
-    /> */}
-
+   
   </React.StrictMode>,
 )
