@@ -1,9 +1,11 @@
 import { useState } from "react"
 import { AddTask } from "./components/AddTask"
+
 const Items = ({ nombre, visto }) => {
     return (<li>{nombre}{visto ? '✅' : '❌'}</li>)
 }
 export const ListasApp = () => {
+  
     const addTask = () => {
         setArreglo([...arreglo, { index: 3, nombre: 'Componentes', visto: false }])
     }
@@ -13,11 +15,17 @@ export const ListasApp = () => {
     ]
     const [arreglo, setArreglo] = useState(listadoSecciones)
 
-    const onAgregarTarea=(val)=>{
-        console.log(val);
+    const onAgregarTarea = (val) => {
+        let valor = val.trim()
+        if(valor<1)return
+        const envio = {
+            nombre: valor,
+            visto: false,
+            index:arreglo.length+1,
+        }
+        setArreglo([...arreglo, envio])
         
     }
-
     return (
         <>
             <AddTask agregar={onAgregarTarea}></AddTask>

@@ -5,17 +5,21 @@ export const AddTask = ({ agregar }) => {
     const [inputValue, setInputValue] = useState(" ")
     const onIputChange = ({ target }) => {
         setInputValue(target.value)
-        console.log(target.value);
     }
-
+    // del padre
+    // const onSubmit = (event) => {
+    //     event.preventDefault()
+    //     const envio =
+    //     {
+    //         nombre: inputValue,
+    //         visto: false
+    //     }
+    //     agregar(task => [...task, envio])
+    // }
     const onSubmit = (event) => {
         event.preventDefault()
-        const envio =
-        {
-            nombre: inputValue,
-            visto: false
-        }
-        agregar(task => [...task, envio])
+        agregar(inputValue)
+        setInputValue("")
     }
 
     return (
