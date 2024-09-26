@@ -21,7 +21,6 @@ export const AddTask = ({ agregar }) => {
         agregar(inputValue)
         setInputValue("")
     }
-
     return (
         <form onSubmit={onSubmit}>
             <input type="text" placeholder="Ingresar tarea" value={inputValue} onChange={onIputChange} />

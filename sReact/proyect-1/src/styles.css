@@ -5,16 +5,29 @@
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     display: flex;
     flex-direction: column;
-    flex:1 0 0;
+    flex: 1 0 0;
     align-items: center;
     justify-content: center;
     height: 100vh;
     background-color: black;
     color: white;
 }
+
+h1 {
+    font-size: 2rem;
+    margin: 10px;
+    color: blueviolet;
+}
+
 ul {
+    margin: 10px;
     list-style: none;
+}
+
+li {
+    margin: 10px;
 }

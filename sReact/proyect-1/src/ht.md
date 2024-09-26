@@ -2,6 +2,7 @@ Para tu presentación, te sugiero una agenda clara y estructurada que cubra los 
  
 ### 1. **Introducción (5 min)**
    - **Objetivo de la presentación**: Explicar la relevancia de elegir las herramientas de desarrollo antes de comenzar un proyecto.
+
    - **Breve visión general**: ¿Por qué es crucial hacer una buena selección?
  
 ### 2. **Impacto de las herramientas en el ciclo de vida del proyecto (10 min)**
