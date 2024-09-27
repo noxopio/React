@@ -8,26 +8,22 @@ export const UsersApp = () => {
             const data = await resp.json()
             setUsers(data)
         } catch (error) {
-            console.log('error',error);
+            console.log('error', error);
         }
     }
-const [endpoint, setEndpoint] = useState('users')
-
-
+    const [endpoint, setEndpoint] = useState('users')
     // useEffect(() => { fetchUsers()}, [])
-const handleFecth = () => {
-// fetchUsers()
-setEndpoint('comments')	
-
-}
-
+    const handleFecth = () => {
+        // fetchUsers()
+        setEndpoint('comments')
+    }
     return (
         <>
             <h1>
                 listado de usuarios
             </h1>
             <UserList endPoint={endpoint} />
-<button onClick={handleFecth} >Listar usuarios</button>
+            <button onClick={handleFecth} >Listar usuarios</button>
         </>
     )
 }
