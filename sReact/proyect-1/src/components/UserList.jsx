@@ -1,19 +1,10 @@
-import { useEffect, useState } from "react";
-
+/* eslint-disable no-unused-vars */
+import { userFecthData } from "./hooks/userFecthData"
 
 export const UserList = ({ endPoint }) => {
 
-    const [data, setData] = useState([])
-    const fetchdata = async () => {
-        try {
-            const resp = await fetch(`https://jsonplaceholder.typicode.com/${endPoint}`)
-            const data = await resp.json()
-            setData(data)
-        } catch (error) {
-            console.log('error', error);
-        }
-    }
-    useEffect(() => { fetchdata() }, [endPoint])
+    const { data, isLoading } = userFecthData(endPoint)
+
 
     return (
         <>

@@ -6,13 +6,8 @@ import { UsersApp } from './components/UsersApp'
 // import { ListadoApp } from './ListadoApp'
 // import  {ContadorApp } from './ContadorApp'
 
-
-
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-
-<UsersApp />
-   
+    <UsersApp />
   </React.StrictMode>,
 )
