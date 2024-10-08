@@ -1,6 +1,5 @@
 import React from 'react'
 
-import PropTypes from 'prop-types';
 
 export const Incrementar = React.memo(({ incrementar }) => {
     console.log('me renderize');
@@ -10,7 +9,7 @@ export const Incrementar = React.memo(({ incrementar }) => {
     );
 });
 
-// Incrementar.displayName = 'Incrementar';
+Incrementar.displayName = 'Incrementar';
 
 // Incrementar.propTypes = {
 //     incrementar: PropTypes.func.isRequired,
