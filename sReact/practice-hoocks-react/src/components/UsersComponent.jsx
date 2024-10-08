@@ -25,16 +25,16 @@ export const UsersComponent = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            {data.map(({id,name,email,website}) => {
-                                return(
+                            {data.map(({id,name,email,website}) => 
+                              
                                 <tr key={id}>
                                     <th scope="row">{id}</th>
                                     <td>{name}</td>
                                     <td>{email}</td>
                                     <td>{website}</td>
                                 </tr>
-                                )
-                            })}
+                               
+                            )}
                         </tbody>
                     </table>
             }
