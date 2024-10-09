@@ -1,4 +1,6 @@
+import { useContext } from "react"
 import { useForm } from "../../hooks/useForm"
+import { UserContex } from "./UserContex"
 
 export const LoginScreen = () => {
 
@@ -9,11 +11,10 @@ export const LoginScreen = () => {
         redes: ''
     }
     const { formState, nombre, tecnologias, email, redes, onInputChange } = useForm(initialForm)
-
+    const {setUser}=useContext(UserContex)
 const onSubmit=(e)=>{
 e.preventDefault()
-console.log(formState);
-
+setUser(formState)
 }
 
     return (
