@@ -3,12 +3,11 @@ import { UserContex } from "./UserContex"
 
 const user={
 nombre: "nox",
-tecnologias: ["React", "Node", "MongoDB"],
-mail: "mail@mail.com",
+tecnologias: "React",
+email: "mail@mail.com",
 redes: '@nox_opio'
 
 }
-
 export const UserPovider = ({ children }) => {
     return (
 

@@ -13,15 +13,15 @@ const {user}=useContext(UserContex)
         <tr>
           <th scope="col"  > Nombre</th>
           <th scope="col"  >Tecnologias </th>
-          <th scope="col"  > E-mail</th>
+          <th scope="col"  > Email</th>
           <th scope="col"  > Redes</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <th scope="row" >{user.nombre}</th>
-          <td>{user.tecnologias[0]}</td>
-          <td>{user.mail}</td>
+          <td>{user.tecnologias}</td>
+          <td>{user.email}</td>
           <td>{user.redes}</td>
         </tr>
       </tbody>
