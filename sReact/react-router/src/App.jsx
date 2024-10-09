@@ -3,10 +3,11 @@ import { NavBar } from "./routes/components/NavBar"
 import { HomeScreen } from "./routes/HomeScreen"
 import { AboutScreen } from "./routes/AboutScreen"
 import { ContacScreen } from "./routes/ContacScreen"
+import { UserPovider } from "./routes/context/UserPovider"
 
 export const App = () => {
     return (
-        <>
+        <UserPovider>
             <NavBar />
             <hr />
             <Routes>
@@ -15,6 +16,6 @@ export const App = () => {
                 <Route path='/contact' element={<ContacScreen />}></Route>
                 <Route path='/*' element={<Navigate to='/' />}></Route>
             </Routes>
-        </>
+        </UserPovider>
     )
 }
