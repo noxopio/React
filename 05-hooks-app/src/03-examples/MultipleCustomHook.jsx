@@ -1,11 +1,13 @@
-import { useFetch } from "../hooks"
+import { useCounter, useFetch } from "../hooks"
 
 export const MultipleCustomHook = () => {
 
   // const handlePrint = () => {
   //   window.print();
   // };
-  const urlPokemon = 'https://pokeapi.co/api/v2/pokemon/1'
+
+  const { counter, increment, decrement } = useCounter(1);
+  const urlPokemon = `https://pokeapi.co/api/v2/pokemon/${counter}`;
   const { data, hasError, isLoading } = useFetch(urlPokemon);
   return (
     <>
@@ -14,7 +16,17 @@ export const MultipleCustomHook = () => {
       {(isLoading) && <p>Cargando...</p>}
       {/* <pre>{JSON.stringify(data,null,2)}</pre> */}
       <h1>{data?.name}</h1>
-      {/* <button onClick={handlePrint}>Imprimir</button> */}
+
+      <button
+        className="btn btn-primary mt-2 "
+      >
+        Siguiente
+      </button>
+      <button
+        className="btn btn-primary mt-2 "
+        >
+        Anterior
+      </button>
     </>
   )
 }
