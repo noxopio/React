@@ -1,4 +1,5 @@
 import { useCounter, useFetch } from "../hooks"
+import { AppComponet } from "./AppComponet";
 import { LoadingMessage } from "./LoadingMessage";
 import { PokemonCard } from "./PokemonCard";
 
@@ -13,6 +14,7 @@ export const MultipleCustomHook = () => {
   const { data, hasError, isLoading } = useFetch(urlPokemon);
   return (
     <>
+    <AppComponet/>
       <h1>Informacion de Pokemon</h1>
       <hr />
       {(isLoading) ?
