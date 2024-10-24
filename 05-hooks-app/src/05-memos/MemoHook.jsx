@@ -14,9 +14,9 @@ const heavyProcess = (iterations = 100) => {
 
 export const MemoHook = () => {
 
-    const memorizedValue = useMemo(() => heavyProcess(counter), [counter])
     const { counter, increment } = useCounter(4000);
     const [show, setShow] = useState(true)
+    const memorizedValue = useMemo(() => heavyProcess(counter), [counter])
 
 
 
