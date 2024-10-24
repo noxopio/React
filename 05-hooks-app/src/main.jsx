@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { FocusScreen } from './04-useRef/FocusScreen';
-import { Memorize } from './05-memos/Memorize';
+// import { FocusScreen } from './04-useRef/FocusScreen';
+// import { Memorize } from './05-memos/Memorize';
+import { MemoHook } from './05-memos/MemoHook';
 // import { MultipleCustomHook } from './03-examples/MultipleCustomHook';
 // import { FormWithCustomHook } from './02-useEfect/FormWithCustomHook';
 // import { HooksApp } from './HooksApp';
@@ -17,9 +18,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <FormWithCustomHook /> */}
     {/* <CounterWithCustomHook /> */}
     {/* <MultipleCustomHook/> */}
-    {/* <FocusScreen /> */}
-    <Memorize />
-
+    {/* <Memorize /> */}
+    <MemoHook />
 
   </React.StrictMode>,
 )
