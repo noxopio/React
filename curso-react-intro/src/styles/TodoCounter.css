@@ -1,0 +1,30 @@
+.text {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+
+    display: inline-block;
+    transition: color 400ms ease-in-out;
+}
+
+.text:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.TodoCounter {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    padding: 48px;
+    font-weight: normal;
+
+}
+
+
+.TodoCounter span{
+    font-weight: bold;
+    color: #333;
+}
